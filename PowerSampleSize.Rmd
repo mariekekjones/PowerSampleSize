@@ -243,6 +243,14 @@ Oooh that is alot of people. What if we could deal with only being able to detec
 pwr.t2n.test(n2 = 35, d = 0.8, power = 0.8)
 ```
 
+When in doubt about the effect size, you can always fall back on "conventional" effect sizes:
+
+```{r}
+cohen.ES(test = "t", size = "small")
+cohen.ES(test = "t", size = "medium")
+cohen.ES(test = "t", size = "large")
+```
+
 This is all we have time to cover today. You should know that the pwr package also has functions for calculating power and sample size for Chi Square, correlation, ANOVA, and linear models.
 
 ## pwr.chisq.test

@@ -749,6 +749,28 @@ plot(pout)</code></pre>
 ##       sig.level = 0.05
 ##           power = 0.8
 ##     alternative = two.sided</code></pre>
+<p>When in doubt about the effect size, you can always fall back on “conventional” effect sizes:</p>
+<pre class="r"><code>cohen.ES(test = &quot;t&quot;, size = &quot;small&quot;)</code></pre>
+<pre><code>## 
+##      Conventional effect size from Cohen (1982) 
+## 
+##            test = t
+##            size = small
+##     effect.size = 0.2</code></pre>
+<pre class="r"><code>cohen.ES(test = &quot;t&quot;, size = &quot;medium&quot;)</code></pre>
+<pre><code>## 
+##      Conventional effect size from Cohen (1982) 
+## 
+##            test = t
+##            size = medium
+##     effect.size = 0.5</code></pre>
+<pre class="r"><code>cohen.ES(test = &quot;t&quot;, size = &quot;large&quot;)</code></pre>
+<pre><code>## 
+##      Conventional effect size from Cohen (1982) 
+## 
+##            test = t
+##            size = large
+##     effect.size = 0.8</code></pre>
 <p>This is all we have time to cover today. You should know that the pwr package also has functions for calculating power and sample size for Chi Square, correlation, ANOVA, and linear models.</p>
 <div id="pwr.chisq.test" class="section level2">
 <h2>pwr.chisq.test</h2>
